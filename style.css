@@ -1,0 +1,77 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f0f0f, #1e1e1e);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    animation: fadeIn 1s ease;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ddd;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    background: #ffd700;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #ffea61;
+}
+
+.card {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.06);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
